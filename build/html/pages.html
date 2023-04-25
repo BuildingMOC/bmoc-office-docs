@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PAGES &mdash; Office Tools 1.0.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="TOOLS" href="tools.html" />
+    <link rel="prev" title="Welcome to Office Tools’s documentation!" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Office Tools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">PAGES</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#pages.1_PM_Libraries.PMProcedure"><code class="docutils literal notranslate"><span class="pre">PMProcedure</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#pages.1_PM_Libraries.PMProcedure.pm_libary_workbook"><code class="docutils literal notranslate"><span class="pre">PMProcedure.pm_libary_workbook</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pages.1_PM_Libraries.PMProcedure.procedure_workbook"><code class="docutils literal notranslate"><span class="pre">PMProcedure.procedure_workbook</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pages.1_PM_Libraries.PMProcedure.adcts"><code class="docutils literal notranslate"><span class="pre">PMProcedure.adcts</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pages.1_PM_Libraries.PMProcedure.orange_fill"><code class="docutils literal notranslate"><span class="pre">PMProcedure.orange_fill</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pages.1_PM_Libraries.PMProcedure.header_font"><code class="docutils literal notranslate"><span class="pre">PMProcedure.header_font</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pages.1_PM_Libraries.PMProcedure.body_font"><code class="docutils literal notranslate"><span class="pre">PMProcedure.body_font</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pages.1_PM_Libraries.PMProcedure.border"><code class="docutils literal notranslate"><span class="pre">PMProcedure.border</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pages.1_PM_Libraries.PMProcedure.alignment"><code class="docutils literal notranslate"><span class="pre">PMProcedure.alignment</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pages.1_PM_Libraries.PMProcedure.client_name"><code class="docutils literal notranslate"><span class="pre">PMProcedure.client_name</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pages.1_PM_Libraries.PMProcedure.procedures_headers"><code class="docutils literal notranslate"><span class="pre">PMProcedure.procedures_headers</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pages.1_PM_Libraries.PMProcedure.summary_headers"><code class="docutils literal notranslate"><span class="pre">PMProcedure.summary_headers</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pages.1_PM_Libraries.PMProcedure.headers_to_letters"><code class="docutils literal notranslate"><span class="pre">PMProcedure.headers_to_letters</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pages.1_PM_Libraries.PMProcedure.run"><code class="docutils literal notranslate"><span class="pre">PMProcedure.run()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pages.1_PM_Libraries.PMProcedure.upload_adcts"><code class="docutils literal notranslate"><span class="pre">PMProcedure.upload_adcts()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pages.1_PM_Libraries.PMProcedure.run_conversion"><code class="docutils literal notranslate"><span class="pre">PMProcedure.run_conversion()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pages.1_PM_Libraries.PMProcedure.as_text"><code class="docutils literal notranslate"><span class="pre">PMProcedure.as_text()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pages.1_PM_Libraries.PMProcedure.create_asset_inventory_sheet"><code class="docutils literal notranslate"><span class="pre">PMProcedure.create_asset_inventory_sheet()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pages.1_PM_Libraries.PMProcedure.create_pm_procedures_sheet"><code class="docutils literal notranslate"><span class="pre">PMProcedure.create_pm_procedures_sheet()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pages.1_PM_Libraries.PMProcedure.delete_adcts"><code class="docutils literal notranslate"><span class="pre">PMProcedure.delete_adcts()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pages.1_PM_Libraries.PMProcedure.delete_outputs"><code class="docutils literal notranslate"><span class="pre">PMProcedure.delete_outputs()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id0"><code class="docutils literal notranslate"><span class="pre">PMProcedure.adcts</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id1"><code class="docutils literal notranslate"><span class="pre">PMProcedure.alignment</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2"><code class="docutils literal notranslate"><span class="pre">PMProcedure.as_text()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3"><code class="docutils literal notranslate"><span class="pre">PMProcedure.body_font</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id4"><code class="docutils literal notranslate"><span class="pre">PMProcedure.border</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id5"><code class="docutils literal notranslate"><span class="pre">PMProcedure.client_name</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id6"><code class="docutils literal notranslate"><span class="pre">PMProcedure.create_asset_inventory_sheet()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id7"><code class="docutils literal notranslate"><span class="pre">PMProcedure.create_pm_procedures_sheet()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id8"><code class="docutils literal notranslate"><span class="pre">PMProcedure.delete_adcts()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id9"><code class="docutils literal notranslate"><span class="pre">PMProcedure.delete_outputs()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id10"><code class="docutils literal notranslate"><span class="pre">PMProcedure.header_font</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id11"><code class="docutils literal notranslate"><span class="pre">PMProcedure.headers_to_letters</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id12"><code class="docutils literal notranslate"><span class="pre">PMProcedure.orange_fill</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pages.1_PM_Libraries.PMProcedure.output_workbook"><code class="docutils literal notranslate"><span class="pre">PMProcedure.output_workbook</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pages.1_PM_Libraries.PMProcedure.pm_library_workbook"><code class="docutils literal notranslate"><span class="pre">PMProcedure.pm_library_workbook</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id13"><code class="docutils literal notranslate"><span class="pre">PMProcedure.procedure_workbook</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id14"><code class="docutils literal notranslate"><span class="pre">PMProcedure.procedures_headers</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id15"><code class="docutils literal notranslate"><span class="pre">PMProcedure.run()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id16"><code class="docutils literal notranslate"><span class="pre">PMProcedure.run_conversion()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id17"><code class="docutils literal notranslate"><span class="pre">PMProcedure.summary_headers</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id18"><code class="docutils literal notranslate"><span class="pre">PMProcedure.upload_adcts()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#pages.3_Planon_Conversion.PlanonConversion"><code class="docutils literal notranslate"><span class="pre">PlanonConversion</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#pages.3_Planon_Conversion.PlanonConversion.adct"><code class="docutils literal notranslate"><span class="pre">PlanonConversion.adct</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pages.3_Planon_Conversion.PlanonConversion.alignment_template"><code class="docutils literal notranslate"><span class="pre">PlanonConversion.alignment_template</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pages.3_Planon_Conversion.PlanonConversion.photo_report"><code class="docutils literal notranslate"><span class="pre">PlanonConversion.photo_report</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pages.3_Planon_Conversion.PlanonConversion.client_abbrev"><code class="docutils literal notranslate"><span class="pre">PlanonConversion.client_abbrev</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pages.3_Planon_Conversion.PlanonConversion.bldg_num"><code class="docutils literal notranslate"><span class="pre">PlanonConversion.bldg_num</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pages.3_Planon_Conversion.PlanonConversion.bldg_name"><code class="docutils literal notranslate"><span class="pre">PlanonConversion.bldg_name</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pages.3_Planon_Conversion.PlanonConversion.warnings"><code class="docutils literal notranslate"><span class="pre">PlanonConversion.warnings</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pages.3_Planon_Conversion.PlanonConversion.building_code"><code class="docutils literal notranslate"><span class="pre">PlanonConversion.building_code</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pages.3_Planon_Conversion.PlanonConversion.adct_workbook"><code class="docutils literal notranslate"><span class="pre">PlanonConversion.adct_workbook</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pages.3_Planon_Conversion.PlanonConversion.alignment_template_workbook"><code class="docutils literal notranslate"><span class="pre">PlanonConversion.alignment_template_workbook</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pages.3_Planon_Conversion.PlanonConversion.asset_data_loader_workbook"><code class="docutils literal notranslate"><span class="pre">PlanonConversion.asset_data_loader_workbook</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pages.3_Planon_Conversion.PlanonConversion.comm_loader_workbook"><code class="docutils literal notranslate"><span class="pre">PlanonConversion.comm_loader_workbook</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pages.3_Planon_Conversion.PlanonConversion.pm_assoc_loader_workbook"><code class="docutils literal notranslate"><span class="pre">PlanonConversion.pm_assoc_loader_workbook</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pages.3_Planon_Conversion.PlanonConversion.photo_report_dict"><code class="docutils literal notranslate"><span class="pre">PlanonConversion.photo_report_dict</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pages.3_Planon_Conversion.PlanonConversion.__init__"><code class="docutils literal notranslate"><span class="pre">PlanonConversion.__init__()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pages.3_Planon_Conversion.PlanonConversion.run"><code class="docutils literal notranslate"><span class="pre">PlanonConversion.run()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pages.3_Planon_Conversion.PlanonConversion.check_file_type"><code class="docutils literal notranslate"><span class="pre">PlanonConversion.check_file_type()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pages.3_Planon_Conversion.PlanonConversion.upload_adct"><code class="docutils literal notranslate"><span class="pre">PlanonConversion.upload_adct()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pages.3_Planon_Conversion.PlanonConversion.upload_alignment_template"><code class="docutils literal notranslate"><span class="pre">PlanonConversion.upload_alignment_template()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pages.3_Planon_Conversion.PlanonConversion.delete_adct"><code class="docutils literal notranslate"><span class="pre">PlanonConversion.delete_adct()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pages.3_Planon_Conversion.PlanonConversion.delete_alignment_template"><code class="docutils literal notranslate"><span class="pre">PlanonConversion.delete_alignment_template()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pages.3_Planon_Conversion.PlanonConversion.upload_photo_report"><code class="docutils literal notranslate"><span class="pre">PlanonConversion.upload_photo_report()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pages.3_Planon_Conversion.PlanonConversion.delete_temporary_folder"><code class="docutils literal notranslate"><span class="pre">PlanonConversion.delete_temporary_folder()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pages.3_Planon_Conversion.PlanonConversion.run_conversion"><code class="docutils literal notranslate"><span class="pre">PlanonConversion.run_conversion()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pages.3_Planon_Conversion.PlanonConversion.parse_photo_report"><code class="docutils literal notranslate"><span class="pre">PlanonConversion.parse_photo_report()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pages.3_Planon_Conversion.PlanonConversion.copy_template"><code class="docutils literal notranslate"><span class="pre">PlanonConversion.copy_template()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pages.3_Planon_Conversion.PlanonConversion.create_asset_data_loader"><code class="docutils literal notranslate"><span class="pre">PlanonConversion.create_asset_data_loader()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pages.3_Planon_Conversion.PlanonConversion.create_comm_loader"><code class="docutils literal notranslate"><span class="pre">PlanonConversion.create_comm_loader()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pages.3_Planon_Conversion.PlanonConversion.create_pm_assoc_loader"><code class="docutils literal notranslate"><span class="pre">PlanonConversion.create_pm_assoc_loader()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pages.3_Planon_Conversion.PlanonConversion.return_header_indices"><code class="docutils literal notranslate"><span class="pre">PlanonConversion.return_header_indices()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pages.3_Planon_Conversion.PlanonConversion.planon_to_bmoc_fields"><code class="docutils literal notranslate"><span class="pre">PlanonConversion.planon_to_bmoc_fields()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pages.3_Planon_Conversion.PlanonConversion.get_maximum_rows"><code class="docutils literal notranslate"><span class="pre">PlanonConversion.get_maximum_rows()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pages.3_Planon_Conversion.PlanonConversion.get_maximum_column"><code class="docutils literal notranslate"><span class="pre">PlanonConversion.get_maximum_column()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pages.3_Planon_Conversion.PlanonConversion.as_text"><code class="docutils literal notranslate"><span class="pre">PlanonConversion.as_text()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pages.3_Planon_Conversion.PlanonConversion.get_location_data"><code class="docutils literal notranslate"><span class="pre">PlanonConversion.get_location_data()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pages.3_Planon_Conversion.PlanonConversion.get_code"><code class="docutils literal notranslate"><span class="pre">PlanonConversion.get_code()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pages.3_Planon_Conversion.PlanonConversion.zip_output"><code class="docutils literal notranslate"><span class="pre">PlanonConversion.zip_output()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pages.3_Planon_Conversion.PlanonConversion.delete_all_folders"><code class="docutils literal notranslate"><span class="pre">PlanonConversion.delete_all_folders()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id19"><code class="docutils literal notranslate"><span class="pre">PlanonConversion.as_text()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id20"><code class="docutils literal notranslate"><span class="pre">PlanonConversion.check_file_type()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id21"><code class="docutils literal notranslate"><span class="pre">PlanonConversion.copy_template()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id22"><code class="docutils literal notranslate"><span class="pre">PlanonConversion.create_asset_data_loader()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id23"><code class="docutils literal notranslate"><span class="pre">PlanonConversion.create_comm_loader()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id24"><code class="docutils literal notranslate"><span class="pre">PlanonConversion.create_pm_assoc_loader()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id25"><code class="docutils literal notranslate"><span class="pre">PlanonConversion.delete_all_folders()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id26"><code class="docutils literal notranslate"><span class="pre">PlanonConversion.delete_temporary_folder()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id27"><code class="docutils literal notranslate"><span class="pre">PlanonConversion.get_code()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id28"><code class="docutils literal notranslate"><span class="pre">PlanonConversion.get_location_data()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pages.3_Planon_Conversion.PlanonConversion.get_max_column"><code class="docutils literal notranslate"><span class="pre">PlanonConversion.get_max_column()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id29"><code class="docutils literal notranslate"><span class="pre">PlanonConversion.get_maximum_rows()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id30"><code class="docutils literal notranslate"><span class="pre">PlanonConversion.parse_photo_report()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id31"><code class="docutils literal notranslate"><span class="pre">PlanonConversion.planon_to_bmoc_fields()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id32"><code class="docutils literal notranslate"><span class="pre">PlanonConversion.return_header_indices()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id33"><code class="docutils literal notranslate"><span class="pre">PlanonConversion.run()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id34"><code class="docutils literal notranslate"><span class="pre">PlanonConversion.run_conversion()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id35"><code class="docutils literal notranslate"><span class="pre">PlanonConversion.upload_adct()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id36"><code class="docutils literal notranslate"><span class="pre">PlanonConversion.upload_alignment_template()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id37"><code class="docutils literal notranslate"><span class="pre">PlanonConversion.upload_photo_report()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id38"><code class="docutils literal notranslate"><span class="pre">PlanonConversion.zip_output()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tools.html">TOOLS</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Office Tools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">PAGES</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/pages.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-pages.1_PM_Libraries">
+<span id="pages"></span><h1>PAGES<a class="headerlink" href="#module-pages.1_PM_Libraries" title="Permalink to this heading"></a></h1>
+<p>1_PM_Procedures.py</p>
+<p>Author: Kyle Wengryn
+Version: 0.0.1</p>
+<p>This script adds a page to the BMOC-OFFICE streamlit application.
+The purpose of this script is to upload adcts and convert them
+to another excel workbook with 2 sheets: Asset inventory and
+PMProcedures.</p>
+<p>This script uses the BMOC library which can be found at:
+BMOC - SecureBMOCBMOC_PMLibrary.xlsx</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="pages.1_PM_Libraries.PMProcedure">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pages.1_PM_Libraries.</span></span><span class="sig-name descname"><span class="pre">PMProcedure</span></span><a class="headerlink" href="#pages.1_PM_Libraries.PMProcedure" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>A class to run the streamlit UI and functions for converting
+and adct into Asset Inventory sheet and PM Procedure sheets</p>
+<p>…</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pages.1_PM_Libraries.PMProcedure.pm_libary_workbook">
+<span class="sig-name descname"><span class="pre">pm_libary_workbook</span></span><a class="headerlink" href="#pages.1_PM_Libraries.PMProcedure.pm_libary_workbook" title="Permalink to this definition"></a></dt>
+<dd><p>returned value from st.file_uploader widget for pm library</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>file-like object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pages.1_PM_Libraries.PMProcedure.procedure_workbook">
+<span class="sig-name descname"><span class="pre">procedure_workbook</span></span><a class="headerlink" href="#pages.1_PM_Libraries.PMProcedure.procedure_workbook" title="Permalink to this definition"></a></dt>
+<dd><p>workbook output</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>openpyxl workbook</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pages.1_PM_Libraries.PMProcedure.adcts">
+<span class="sig-name descname"><span class="pre">adcts</span></span><a class="headerlink" href="#pages.1_PM_Libraries.PMProcedure.adcts" title="Permalink to this definition"></a></dt>
+<dd><p>returned value(s) from st.file_uploader widget for adcts</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list[file-like] objects</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pages.1_PM_Libraries.PMProcedure.orange_fill">
+<span class="sig-name descname"><span class="pre">orange_fill</span></span><a class="headerlink" href="#pages.1_PM_Libraries.PMProcedure.orange_fill" title="Permalink to this definition"></a></dt>
+<dd><p>cell background color for headers.color = #ffb716</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>openpyxl.styles.PatternFill</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pages.1_PM_Libraries.PMProcedure.header_font">
+<span class="sig-name descname"><span class="pre">header_font</span></span><a class="headerlink" href="#pages.1_PM_Libraries.PMProcedure.header_font" title="Permalink to this definition"></a></dt>
+<dd><p>name=’MS Reference Sans Serif’, bold=True</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>openpyxl.styles.Font</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pages.1_PM_Libraries.PMProcedure.body_font">
+<span class="sig-name descname"><span class="pre">body_font</span></span><a class="headerlink" href="#pages.1_PM_Libraries.PMProcedure.body_font" title="Permalink to this definition"></a></dt>
+<dd><p>name=’MS Reference Sans Serif’</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>openpyxl.styles.Font</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pages.1_PM_Libraries.PMProcedure.border">
+<span class="sig-name descname"><span class="pre">border</span></span><a class="headerlink" href="#pages.1_PM_Libraries.PMProcedure.border" title="Permalink to this definition"></a></dt>
+<dd><p>thin top border for a cell</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>openpyxl.styles.Border</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pages.1_PM_Libraries.PMProcedure.alignment">
+<span class="sig-name descname"><span class="pre">alignment</span></span><a class="headerlink" href="#pages.1_PM_Libraries.PMProcedure.alignment" title="Permalink to this definition"></a></dt>
+<dd><p>wraped text alignment for a cell</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>openpyxl.styles.Alignment</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pages.1_PM_Libraries.PMProcedure.client_name">
+<span class="sig-name descname"><span class="pre">client_name</span></span><a class="headerlink" href="#pages.1_PM_Libraries.PMProcedure.client_name" title="Permalink to this definition"></a></dt>
+<dd><p>name of the client for output header</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pages.1_PM_Libraries.PMProcedure.procedures_headers">
+<span class="sig-name descname"><span class="pre">procedures_headers</span></span><a class="headerlink" href="#pages.1_PM_Libraries.PMProcedure.procedures_headers" title="Permalink to this definition"></a></dt>
+<dd><p>Headers for the pm procedures tab on the converted file</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>List[str]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pages.1_PM_Libraries.PMProcedure.summary_headers">
+<span class="sig-name descname"><span class="pre">summary_headers</span></span><a class="headerlink" href="#pages.1_PM_Libraries.PMProcedure.summary_headers" title="Permalink to this definition"></a></dt>
+<dd><p>Headers for the pm procedures tab on the converted file</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>List[str]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pages.1_PM_Libraries.PMProcedure.headers_to_letters">
+<span class="sig-name descname"><span class="pre">headers_to_letters</span></span><a class="headerlink" href="#pages.1_PM_Libraries.PMProcedure.headers_to_letters" title="Permalink to this definition"></a></dt>
+<dd><p>maps headers to excel column letters</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pages.1_PM_Libraries.PMProcedure.run">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pages.1_PM_Libraries.PMProcedure.run" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pages.1_PM_Libraries.PMProcedure.upload_adcts">
+<span class="sig-name descname"><span class="pre">upload_adcts</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pages.1_PM_Libraries.PMProcedure.upload_adcts" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pages.1_PM_Libraries.PMProcedure.run_conversion">
+<span class="sig-name descname"><span class="pre">run_conversion</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pages.1_PM_Libraries.PMProcedure.run_conversion" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pages.1_PM_Libraries.PMProcedure.as_text">
+<span class="sig-name descname"><span class="pre">as_text</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pages.1_PM_Libraries.PMProcedure.as_text" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pages.1_PM_Libraries.PMProcedure.create_asset_inventory_sheet">
+<span class="sig-name descname"><span class="pre">create_asset_inventory_sheet</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">adct_summary_sheet</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">procedure_asset_inventory</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pages.1_PM_Libraries.PMProcedure.create_asset_inventory_sheet" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pages.1_PM_Libraries.PMProcedure.create_pm_procedures_sheet">
+<span class="sig-name descname"><span class="pre">create_pm_procedures_sheet</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pms_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pm_procedures_sheet</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pages.1_PM_Libraries.PMProcedure.create_pm_procedures_sheet" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pages.1_PM_Libraries.PMProcedure.delete_adcts">
+<span class="sig-name descname"><span class="pre">delete_adcts</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pages.1_PM_Libraries.PMProcedure.delete_adcts" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pages.1_PM_Libraries.PMProcedure.delete_outputs">
+<span class="sig-name descname"><span class="pre">delete_outputs</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pages.1_PM_Libraries.PMProcedure.delete_outputs" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id0">
+<span class="sig-name descname"><span class="pre">adcts</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#id0" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id1">
+<span class="sig-name descname"><span class="pre">alignment</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;openpyxl.styles.alignment.Alignment</span> <span class="pre">object&gt;</span> <span class="pre">Parameters:</span> <span class="pre">horizontal=None,</span> <span class="pre">vertical=None,</span> <span class="pre">textRotation=0,</span> <span class="pre">wrapText=True,</span> <span class="pre">shrinkToFit=None,</span> <span class="pre">indent=0.0,</span> <span class="pre">relativeIndent=0.0,</span> <span class="pre">justifyLastLine=None,</span> <span class="pre">readingOrder=0.0</span></em><a class="headerlink" href="#id1" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id2">
+<span class="sig-name descname"><span class="pre">as_text</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#id2" title="Permalink to this definition"></a></dt>
+<dd><p>Converts cell value to text if the value exists</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>value</strong> (<em>str</em><em>, </em><em>None</em>) – </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Converted cell value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id3">
+<span class="sig-name descname"><span class="pre">body_font</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;openpyxl.styles.fonts.Font</span> <span class="pre">object&gt;</span> <span class="pre">Parameters:</span> <span class="pre">name='MS</span> <span class="pre">Reference</span> <span class="pre">Sans</span> <span class="pre">Serif',</span> <span class="pre">charset=None,</span> <span class="pre">family=None,</span> <span class="pre">b=False,</span> <span class="pre">i=False,</span> <span class="pre">strike=None,</span> <span class="pre">outline=None,</span> <span class="pre">shadow=None,</span> <span class="pre">condense=None,</span> <span class="pre">color=None,</span> <span class="pre">extend=None,</span> <span class="pre">sz=None,</span> <span class="pre">u=None,</span> <span class="pre">vertAlign=None,</span> <span class="pre">scheme=None</span></em><a class="headerlink" href="#id3" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id4">
+<span class="sig-name descname"><span class="pre">border</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;openpyxl.styles.borders.Border</span> <span class="pre">object&gt;</span> <span class="pre">Parameters:</span> <span class="pre">outline=True,</span> <span class="pre">diagonalUp=False,</span> <span class="pre">diagonalDown=False,</span> <span class="pre">start=None,</span> <span class="pre">end=None,</span> <span class="pre">left=None,</span> <span class="pre">right=None,</span> <span class="pre">top=&lt;openpyxl.styles.borders.Side</span> <span class="pre">object&gt;</span> <span class="pre">Parameters:</span> <span class="pre">style='thin',</span> <span class="pre">color=&lt;openpyxl.styles.colors.Color</span> <span class="pre">object&gt;</span> <span class="pre">Parameters:</span> <span class="pre">rgb='00000000',</span> <span class="pre">indexed=None,</span> <span class="pre">auto=None,</span> <span class="pre">theme=None,</span> <span class="pre">tint=0.0,</span> <span class="pre">type='rgb',</span> <span class="pre">bottom=None,</span> <span class="pre">diagonal=None,</span> <span class="pre">vertical=None,</span> <span class="pre">horizontal=None</span></em><a class="headerlink" href="#id4" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id5">
+<span class="sig-name descname"><span class="pre">client_name</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="headerlink" href="#id5" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id6">
+<span class="sig-name descname"><span class="pre">create_asset_inventory_sheet</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">adct_summary_sheet</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#id6" title="Permalink to this definition"></a></dt>
+<dd><p>Iterates through each column and row in the adct summary sheet
+and copies it over to the asset inventory sheet in the output file</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>adct_summary_sheet</strong> (<em>openpyxl workbook</em>) – Summary sheet from adct</p></li>
+<li><p><strong>procedure_asset_inventory</strong> (<em>openpyxl workbook</em>) – Asset Inventory sheet for ouput file</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><em>list[str]</em> – A list of all the PMS found in the adct summary sheet</p></li>
+<li><p><em>str</em> – number of the building</p></li>
+<li><p><em>str</em> – name of the building</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id7">
+<span class="sig-name descname"><span class="pre">create_pm_procedures_sheet</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pms_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bldg_num</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bldg_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#id7" title="Permalink to this definition"></a></dt>
+<dd><p>Creates the pm procedures sheet in the output file by
+iterating through every line in the pm library and writing it to the
+output file if the PM matches</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>pms_list</strong> (<em>list</em><em>[</em><em>str</em><em>]</em>) – list of pms</p></li>
+<li><p><strong>bldg_name</strong> – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id8">
+<span class="sig-name descname"><span class="pre">delete_adcts</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#id8" title="Permalink to this definition"></a></dt>
+<dd><p>Deletes all of the adcts in the temporary directory</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id9">
+<span class="sig-name descname"><span class="pre">delete_outputs</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#id9" title="Permalink to this definition"></a></dt>
+<dd><p>Deletes the zip file and the output files once they are
+downloaded by the user</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id10">
+<span class="sig-name descname"><span class="pre">header_font</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;openpyxl.styles.fonts.Font</span> <span class="pre">object&gt;</span> <span class="pre">Parameters:</span> <span class="pre">name='MS</span> <span class="pre">Reference</span> <span class="pre">Sans</span> <span class="pre">Serif',</span> <span class="pre">charset=None,</span> <span class="pre">family=None,</span> <span class="pre">b=True,</span> <span class="pre">i=False,</span> <span class="pre">strike=None,</span> <span class="pre">outline=None,</span> <span class="pre">shadow=None,</span> <span class="pre">condense=None,</span> <span class="pre">color=None,</span> <span class="pre">extend=None,</span> <span class="pre">sz=None,</span> <span class="pre">u=None,</span> <span class="pre">vertAlign=None,</span> <span class="pre">scheme=None</span></em><a class="headerlink" href="#id10" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id11">
+<span class="sig-name descname"><span class="pre">headers_to_letters</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'Consumable</span> <span class="pre">Items':</span> <span class="pre">'I',</span> <span class="pre">'Description':</span> <span class="pre">'B',</span> <span class="pre">'Estimated</span> <span class="pre">Labor</span> <span class="pre">Hours':</span> <span class="pre">'D',</span> <span class="pre">'Frequency':</span> <span class="pre">'C',</span> <span class="pre">'PM</span> <span class="pre">#':</span> <span class="pre">'A',</span> <span class="pre">'PM</span> <span class="pre">Step':</span> <span class="pre">'F',</span> <span class="pre">'Recordable</span> <span class="pre">Measurements':</span> <span class="pre">'G',</span> <span class="pre">'Special</span> <span class="pre">Tools':</span> <span class="pre">'H',</span> <span class="pre">'Step</span> <span class="pre">Number':</span> <span class="pre">'E'}</span></em><a class="headerlink" href="#id11" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id12">
+<span class="sig-name descname"><span class="pre">orange_fill</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;openpyxl.styles.fills.PatternFill</span> <span class="pre">object&gt;</span> <span class="pre">Parameters:</span> <span class="pre">patternType='solid',</span> <span class="pre">fgColor=&lt;openpyxl.styles.colors.Color</span> <span class="pre">object&gt;</span> <span class="pre">Parameters:</span> <span class="pre">rgb='00ffb716',</span> <span class="pre">indexed=None,</span> <span class="pre">auto=None,</span> <span class="pre">theme=None,</span> <span class="pre">tint=0.0,</span> <span class="pre">type='rgb',</span> <span class="pre">bgColor=&lt;openpyxl.styles.colors.Color</span> <span class="pre">object&gt;</span> <span class="pre">Parameters:</span> <span class="pre">rgb='00ffb716',</span> <span class="pre">indexed=None,</span> <span class="pre">auto=None,</span> <span class="pre">theme=None,</span> <span class="pre">tint=0.0,</span> <span class="pre">type='rgb'</span></em><a class="headerlink" href="#id12" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pages.1_PM_Libraries.PMProcedure.output_workbook">
+<span class="sig-name descname"><span class="pre">output_workbook</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#pages.1_PM_Libraries.PMProcedure.output_workbook" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pages.1_PM_Libraries.PMProcedure.pm_library_workbook">
+<span class="sig-name descname"><span class="pre">pm_library_workbook</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#pages.1_PM_Libraries.PMProcedure.pm_library_workbook" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id13">
+<span class="sig-name descname"><span class="pre">procedure_workbook</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#id13" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id14">
+<span class="sig-name descname"><span class="pre">procedures_headers</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">['PM</span> <span class="pre">#',</span> <span class="pre">'Description',</span> <span class="pre">'Frequency',</span> <span class="pre">'Estimated</span> <span class="pre">Labor</span> <span class="pre">Hours',</span> <span class="pre">'Step</span> <span class="pre">Number',</span> <span class="pre">'PM</span> <span class="pre">Step',</span> <span class="pre">'Recordable</span> <span class="pre">Measurements',</span> <span class="pre">'Special</span> <span class="pre">Tools',</span> <span class="pre">'Consumable</span> <span class="pre">Items']</span></em><a class="headerlink" href="#id14" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id15">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#id15" title="Permalink to this definition"></a></dt>
+<dd><p>The main function that populates the webpage and controls all of the
+widget functions in the page</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id16">
+<span class="sig-name descname"><span class="pre">run_conversion</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#id16" title="Permalink to this definition"></a></dt>
+<dd><p>Starts the conversion process. It loads the pm_library
+and iterates through all of the adcts that were
+uploaded.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id17">
+<span class="sig-name descname"><span class="pre">summary_headers</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">['PM</span> <span class="pre">#',</span> <span class="pre">'Description',</span> <span class="pre">'Frequency',</span> <span class="pre">'Estimated</span> <span class="pre">Labor</span> <span class="pre">Hours']</span></em><a class="headerlink" href="#id17" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id18">
+<span class="sig-name descname"><span class="pre">upload_adcts</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#id18" title="Permalink to this definition"></a></dt>
+<dd><p>Uploads adcts into the temporary adcts_for_pm_procedure/
+directory</p>
+</dd></dl>
+
+</dd></dl>
+
+<span class="target" id="module-pages.3_Planon_Conversion"></span><p>3_Planon_Conversions.py</p>
+<p>Author: Kyle Wengryn
+Version: 0.0.1</p>
+<p>This script converts an ADCT into a template that can be loaded
+into Planon CMMS.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="pages.3_Planon_Conversion.PlanonConversion">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pages.3_Planon_Conversion.</span></span><span class="sig-name descname"><span class="pre">PlanonConversion</span></span><a class="headerlink" href="#pages.3_Planon_Conversion.PlanonConversion" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class that holds all of the functions for
+converting an ADCT</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pages.3_Planon_Conversion.PlanonConversion.adct">
+<span class="sig-name descname"><span class="pre">adct</span></span><a class="headerlink" href="#pages.3_Planon_Conversion.PlanonConversion.adct" title="Permalink to this definition"></a></dt>
+<dd><p>returned object from the adct file uploader</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>file-like object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pages.3_Planon_Conversion.PlanonConversion.alignment_template">
+<span class="sig-name descname"><span class="pre">alignment_template</span></span><a class="headerlink" href="#pages.3_Planon_Conversion.PlanonConversion.alignment_template" title="Permalink to this definition"></a></dt>
+<dd><p>returned object from the alignment_template uploader</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>file-like object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pages.3_Planon_Conversion.PlanonConversion.photo_report">
+<span class="sig-name descname"><span class="pre">photo_report</span></span><a class="headerlink" href="#pages.3_Planon_Conversion.PlanonConversion.photo_report" title="Permalink to this definition"></a></dt>
+<dd><p>returned object from the photo report uploader</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>file-like object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pages.3_Planon_Conversion.PlanonConversion.client_abbrev">
+<span class="sig-name descname"><span class="pre">client_abbrev</span></span><a class="headerlink" href="#pages.3_Planon_Conversion.PlanonConversion.client_abbrev" title="Permalink to this definition"></a></dt>
+<dd><p>client name abbreviation</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pages.3_Planon_Conversion.PlanonConversion.bldg_num">
+<span class="sig-name descname"><span class="pre">bldg_num</span></span><a class="headerlink" href="#pages.3_Planon_Conversion.PlanonConversion.bldg_num" title="Permalink to this definition"></a></dt>
+<dd><p>building number</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pages.3_Planon_Conversion.PlanonConversion.bldg_name">
+<span class="sig-name descname"><span class="pre">bldg_name</span></span><a class="headerlink" href="#pages.3_Planon_Conversion.PlanonConversion.bldg_name" title="Permalink to this definition"></a></dt>
+<dd><p>building name</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pages.3_Planon_Conversion.PlanonConversion.warnings">
+<span class="sig-name descname"><span class="pre">warnings</span></span><a class="headerlink" href="#pages.3_Planon_Conversion.PlanonConversion.warnings" title="Permalink to this definition"></a></dt>
+<dd><p>List of warnings encountered during conversion</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list[str]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pages.3_Planon_Conversion.PlanonConversion.building_code">
+<span class="sig-name descname"><span class="pre">building_code</span></span><a class="headerlink" href="#pages.3_Planon_Conversion.PlanonConversion.building_code" title="Permalink to this definition"></a></dt>
+<dd><p>Building code as defined by the client</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pages.3_Planon_Conversion.PlanonConversion.adct_workbook">
+<span class="sig-name descname"><span class="pre">adct_workbook</span></span><a class="headerlink" href="#pages.3_Planon_Conversion.PlanonConversion.adct_workbook" title="Permalink to this definition"></a></dt>
+<dd><p>workbook for the ADCT</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>openpyxl.Workbook</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pages.3_Planon_Conversion.PlanonConversion.alignment_template_workbook">
+<span class="sig-name descname"><span class="pre">alignment_template_workbook</span></span><a class="headerlink" href="#pages.3_Planon_Conversion.PlanonConversion.alignment_template_workbook" title="Permalink to this definition"></a></dt>
+<dd><p>workbook for the alignment template</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>openpyxl.Workbook</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pages.3_Planon_Conversion.PlanonConversion.asset_data_loader_workbook">
+<span class="sig-name descname"><span class="pre">asset_data_loader_workbook</span></span><a class="headerlink" href="#pages.3_Planon_Conversion.PlanonConversion.asset_data_loader_workbook" title="Permalink to this definition"></a></dt>
+<dd><p>the workbook that will be saved as the output</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>openpyxl.Workbook</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pages.3_Planon_Conversion.PlanonConversion.comm_loader_workbook">
+<span class="sig-name descname"><span class="pre">comm_loader_workbook</span></span><a class="headerlink" href="#pages.3_Planon_Conversion.PlanonConversion.comm_loader_workbook" title="Permalink to this definition"></a></dt>
+<dd><p>the workbook for the communication loader output</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>openpyxl.Workbook</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pages.3_Planon_Conversion.PlanonConversion.pm_assoc_loader_workbook">
+<span class="sig-name descname"><span class="pre">pm_assoc_loader_workbook</span></span><a class="headerlink" href="#pages.3_Planon_Conversion.PlanonConversion.pm_assoc_loader_workbook" title="Permalink to this definition"></a></dt>
+<dd><p>the workbook for the pm association loader output</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>openpyxl.Workbook</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pages.3_Planon_Conversion.PlanonConversion.photo_report_dict">
+<span class="sig-name descname"><span class="pre">photo_report_dict</span></span><a class="headerlink" href="#pages.3_Planon_Conversion.PlanonConversion.photo_report_dict" title="Permalink to this definition"></a></dt>
+<dd><p>dict that maps asset ID to photo name</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict[str, str]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pages.3_Planon_Conversion.PlanonConversion.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pages.3_Planon_Conversion.PlanonConversion.__init__" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pages.3_Planon_Conversion.PlanonConversion.run">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pages.3_Planon_Conversion.PlanonConversion.run" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pages.3_Planon_Conversion.PlanonConversion.check_file_type">
+<span class="sig-name descname"><span class="pre">check_file_type</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_type</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pages.3_Planon_Conversion.PlanonConversion.check_file_type" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pages.3_Planon_Conversion.PlanonConversion.upload_adct">
+<span class="sig-name descname"><span class="pre">upload_adct</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pages.3_Planon_Conversion.PlanonConversion.upload_adct" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pages.3_Planon_Conversion.PlanonConversion.upload_alignment_template">
+<span class="sig-name descname"><span class="pre">upload_alignment_template</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pages.3_Planon_Conversion.PlanonConversion.upload_alignment_template" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pages.3_Planon_Conversion.PlanonConversion.delete_adct">
+<span class="sig-name descname"><span class="pre">delete_adct</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pages.3_Planon_Conversion.PlanonConversion.delete_adct" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pages.3_Planon_Conversion.PlanonConversion.delete_alignment_template">
+<span class="sig-name descname"><span class="pre">delete_alignment_template</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pages.3_Planon_Conversion.PlanonConversion.delete_alignment_template" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pages.3_Planon_Conversion.PlanonConversion.upload_photo_report">
+<span class="sig-name descname"><span class="pre">upload_photo_report</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pages.3_Planon_Conversion.PlanonConversion.upload_photo_report" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pages.3_Planon_Conversion.PlanonConversion.delete_temporary_folder">
+<span class="sig-name descname"><span class="pre">delete_temporary_folder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">folder_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pages.3_Planon_Conversion.PlanonConversion.delete_temporary_folder" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pages.3_Planon_Conversion.PlanonConversion.run_conversion">
+<span class="sig-name descname"><span class="pre">run_conversion</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pages.3_Planon_Conversion.PlanonConversion.run_conversion" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pages.3_Planon_Conversion.PlanonConversion.parse_photo_report">
+<span class="sig-name descname"><span class="pre">parse_photo_report</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pages.3_Planon_Conversion.PlanonConversion.parse_photo_report" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pages.3_Planon_Conversion.PlanonConversion.copy_template">
+<span class="sig-name descname"><span class="pre">copy_template</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">template_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pages.3_Planon_Conversion.PlanonConversion.copy_template" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pages.3_Planon_Conversion.PlanonConversion.create_asset_data_loader">
+<span class="sig-name descname"><span class="pre">create_asset_data_loader</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pages.3_Planon_Conversion.PlanonConversion.create_asset_data_loader" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pages.3_Planon_Conversion.PlanonConversion.create_comm_loader">
+<span class="sig-name descname"><span class="pre">create_comm_loader</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pages.3_Planon_Conversion.PlanonConversion.create_comm_loader" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pages.3_Planon_Conversion.PlanonConversion.create_pm_assoc_loader">
+<span class="sig-name descname"><span class="pre">create_pm_assoc_loader</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pages.3_Planon_Conversion.PlanonConversion.create_pm_assoc_loader" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pages.3_Planon_Conversion.PlanonConversion.return_header_indices">
+<span class="sig-name descname"><span class="pre">return_header_indices</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sheet</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">row</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pages.3_Planon_Conversion.PlanonConversion.return_header_indices" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pages.3_Planon_Conversion.PlanonConversion.planon_to_bmoc_fields">
+<span class="sig-name descname"><span class="pre">planon_to_bmoc_fields</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sheet</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">headers</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pages.3_Planon_Conversion.PlanonConversion.planon_to_bmoc_fields" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pages.3_Planon_Conversion.PlanonConversion.get_maximum_rows">
+<span class="sig-name descname"><span class="pre">get_maximum_rows</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sheet</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pages.3_Planon_Conversion.PlanonConversion.get_maximum_rows" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pages.3_Planon_Conversion.PlanonConversion.get_maximum_column">
+<span class="sig-name descname"><span class="pre">get_maximum_column</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sheet</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pages.3_Planon_Conversion.PlanonConversion.get_maximum_column" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pages.3_Planon_Conversion.PlanonConversion.as_text">
+<span class="sig-name descname"><span class="pre">as_text</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pages.3_Planon_Conversion.PlanonConversion.as_text" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pages.3_Planon_Conversion.PlanonConversion.get_location_data">
+<span class="sig-name descname"><span class="pre">get_location_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sheet</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">headers</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">field</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pages.3_Planon_Conversion.PlanonConversion.get_location_data" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pages.3_Planon_Conversion.PlanonConversion.get_code">
+<span class="sig-name descname"><span class="pre">get_code</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sheet</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">field</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pages.3_Planon_Conversion.PlanonConversion.get_code" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pages.3_Planon_Conversion.PlanonConversion.zip_output">
+<span class="sig-name descname"><span class="pre">zip_output</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pages.3_Planon_Conversion.PlanonConversion.zip_output" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pages.3_Planon_Conversion.PlanonConversion.delete_all_folders">
+<span class="sig-name descname"><span class="pre">delete_all_folders</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pages.3_Planon_Conversion.PlanonConversion.delete_all_folders" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id19">
+<span class="sig-name descname"><span class="pre">as_text</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#id19" title="Permalink to this definition"></a></dt>
+<dd><p>Converts cell value to text if the value exists</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>value</strong> (<em>str</em><em>, </em><em>None</em>) – </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Converted cell value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id20">
+<span class="sig-name descname"><span class="pre">check_file_type</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_type</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#id20" title="Permalink to this definition"></a></dt>
+<dd><p>Checks if the correct file is uploaded</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>file_name</strong> (<em>str</em>) – file name to be checked</p></li>
+<li><p><strong>file_type</strong> (<em>str</em>) – type that the file should be</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>boolean</strong></p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>if the file matches the expected type</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id21">
+<span class="sig-name descname"><span class="pre">copy_template</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">template_name</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Workbook</span></span></span><a class="headerlink" href="#id21" title="Permalink to this definition"></a></dt>
+<dd><p>Creates a copy of a template into a new file</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>template_name</strong> (<em>str</em>) – name of template to copy</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>worksheet.Worksheet</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id22">
+<span class="sig-name descname"><span class="pre">create_asset_data_loader</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#id22" title="Permalink to this definition"></a></dt>
+<dd><p>Function to create the asset loader from the alignment template</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id23">
+<span class="sig-name descname"><span class="pre">create_comm_loader</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#id23" title="Permalink to this definition"></a></dt>
+<dd><p>Creates the communication loader</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id24">
+<span class="sig-name descname"><span class="pre">create_pm_assoc_loader</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#id24" title="Permalink to this definition"></a></dt>
+<dd><p>creates the pm association load sheet</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id25">
+<span class="sig-name descname"><span class="pre">delete_all_folders</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#id25" title="Permalink to this definition"></a></dt>
+<dd><p>deletes all of the temporary folders</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id26">
+<span class="sig-name descname"><span class="pre">delete_temporary_folder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">folder_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#id26" title="Permalink to this definition"></a></dt>
+<dd><p>Deletes all of the adcts in the temporary directory</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>folder_name</strong> (<em>str</em>) – name of the temporary folder to delete</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id27">
+<span class="sig-name descname"><span class="pre">get_code</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sheet</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Worksheet</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">field</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#id27" title="Permalink to this definition"></a></dt>
+<dd><p>Returns the code that corresponds to the asset group
+or attribute set</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>sheet</strong> (<em>worksheet.Worksheet</em>) – openpyxl worksheet for the Planon Asset Group Codes</p></li>
+<li><p><strong>field</strong> (<em>str</em>) – the group to get code from</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>str</strong></p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>value that corresponds to the field</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id28">
+<span class="sig-name descname"><span class="pre">get_location_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sheet</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Worksheet</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">headers</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">field</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#id28" title="Permalink to this definition"></a></dt>
+<dd><p>Returns the location data in the Planon Location List sheet
+if the client requires more fields</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>sheet</strong> (<em>worksheet.Worksheet</em>) – openpyxl worksheet for the Planon Location List</p></li>
+<li><p><strong>headers</strong> (<em>dict</em><em>[</em><em>str</em><em>, </em><em>int</em><em>]</em>) – map of headers and indices for Planon Location List</p></li>
+<li><p><strong>field</strong> (<em>str</em>) – the value of the field needed</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>str</strong></p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>value that corresponds to the field</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pages.3_Planon_Conversion.PlanonConversion.get_max_column">
+<span class="sig-name descname"><span class="pre">get_max_column</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sheet</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Worksheet</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#pages.3_Planon_Conversion.PlanonConversion.get_max_column" title="Permalink to this definition"></a></dt>
+<dd><p>Function to get max columns of a sheet</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>sheet</strong> (<em>worksheet.Worksheet</em>) – sheet to get max columns of</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>max columns</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id29">
+<span class="sig-name descname"><span class="pre">get_maximum_rows</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sheet</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Worksheet</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#id29" title="Permalink to this definition"></a></dt>
+<dd><p>Function to get max rows of a sheet</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>sheet</strong> (<em>worksheet.Worksheet</em>) – sheet to get max rows of</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>max rows</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id30">
+<span class="sig-name descname"><span class="pre">parse_photo_report</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#id30" title="Permalink to this definition"></a></dt>
+<dd><p>Function to collect data in photo report and store
+it in photo_report_dict</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id31">
+<span class="sig-name descname"><span class="pre">planon_to_bmoc_fields</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sheet</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Worksheet</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">headers</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#id31" title="Permalink to this definition"></a></dt>
+<dd><p>Function to map the BMOC core attributes to the planon entry fields</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>sheet</strong> (<em>worksheet.Worksheet</em>) – BMOC to Planon Load Template</p></li>
+<li><p><strong>headers</strong> (<em>dict</em><em>[</em><em>str</em><em>, </em><em>str</em><em>]</em>) – map of headers to their index</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>map of planon attributes to bmoc entry fields</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict[str, str]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id32">
+<span class="sig-name descname"><span class="pre">return_header_indices</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sheet</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Worksheet</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">row</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#id32" title="Permalink to this definition"></a></dt>
+<dd><p>Function to return a dictionary of the headers and their columns
+for data alignment</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>sheet</strong> (<em>openpyxl sheet</em>) – sheet to get headers from</p></li>
+<li><p><strong>row</strong> (<em>int</em>) – row where the headers are located</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Map of headers and their respective column</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict(str, int)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id33">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#id33" title="Permalink to this definition"></a></dt>
+<dd><p>Main driver function for the streamlit UI</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id34">
+<span class="sig-name descname"><span class="pre">run_conversion</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#id34" title="Permalink to this definition"></a></dt>
+<dd><p>Main function to run the conversion</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id35">
+<span class="sig-name descname"><span class="pre">upload_adct</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#id35" title="Permalink to this definition"></a></dt>
+<dd><p>Uploads the adct into a temporary directory</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id36">
+<span class="sig-name descname"><span class="pre">upload_alignment_template</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#id36" title="Permalink to this definition"></a></dt>
+<dd><p>Uploads the alignment template into a temporary directory</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id37">
+<span class="sig-name descname"><span class="pre">upload_photo_report</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#id37" title="Permalink to this definition"></a></dt>
+<dd><p>Uploads the photo report into a temporary directory</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id38">
+<span class="sig-name descname"><span class="pre">zip_output</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#id38" title="Permalink to this definition"></a></dt>
+<dd><p>zips the contents of the planon conversion folder
+so the user can download</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to Office Tools’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="tools.html" class="btn btn-neutral float-right" title="TOOLS" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Will Campbell, Kyle Wengryn.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

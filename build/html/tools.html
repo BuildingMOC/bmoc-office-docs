@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TOOLS &mdash; Office Tools 1.0.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="PAGES" href="pages.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Office Tools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="pages.html">PAGES</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">TOOLS</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#tools.asset_summary.AssetSummary"><code class="docutils literal notranslate"><span class="pre">AssetSummary</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#tools.asset_summary.AssetSummary.sync_queue"><code class="docutils literal notranslate"><span class="pre">AssetSummary.sync_queue</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tools.asset_summary.AssetSummary.buildings"><code class="docutils literal notranslate"><span class="pre">AssetSummary.buildings</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tools.asset_summary.AssetSummary.assets"><code class="docutils literal notranslate"><span class="pre">AssetSummary.assets</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tools.asset_summary.AssetSummary.selected_project"><code class="docutils literal notranslate"><span class="pre">AssetSummary.selected_project</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tools.asset_summary.AssetSummary.selected_building"><code class="docutils literal notranslate"><span class="pre">AssetSummary.selected_building</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tools.asset_summary.AssetSummary.grid_data"><code class="docutils literal notranslate"><span class="pre">AssetSummary.grid_data</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tools.asset_summary.AssetSummary.db"><code class="docutils literal notranslate"><span class="pre">AssetSummary.db</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tools.asset_summary.AssetSummary.current_grid_data"><code class="docutils literal notranslate"><span class="pre">AssetSummary.current_grid_data</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tools.asset_summary.AssetSummary.uniformat_search"><code class="docutils literal notranslate"><span class="pre">AssetSummary.uniformat_search</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tools.asset_summary.AssetSummary.add_asset"><code class="docutils literal notranslate"><span class="pre">AssetSummary.add_asset()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tools.asset_summary.AssetSummary.as_text"><code class="docutils literal notranslate"><span class="pre">AssetSummary.as_text()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tools.asset_summary.AssetSummary.convert_dataframe"><code class="docutils literal notranslate"><span class="pre">AssetSummary.convert_dataframe()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tools.asset_summary.AssetSummary.delete_temp_folder"><code class="docutils literal notranslate"><span class="pre">AssetSummary.delete_temp_folder()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tools.asset_summary.AssetSummary.generate_asset_model"><code class="docutils literal notranslate"><span class="pre">AssetSummary.generate_asset_model()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tools.asset_summary.AssetSummary.get_max_column"><code class="docutils literal notranslate"><span class="pre">AssetSummary.get_max_column()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tools.asset_summary.AssetSummary.load_data"><code class="docutils literal notranslate"><span class="pre">AssetSummary.load_data()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tools.asset_summary.AssetSummary.load_uniformat_descriptions"><code class="docutils literal notranslate"><span class="pre">AssetSummary.load_uniformat_descriptions()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tools.asset_summary.AssetSummary.return_header_indices"><code class="docutils literal notranslate"><span class="pre">AssetSummary.return_header_indices()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tools.asset_summary.AssetSummary.run"><code class="docutils literal notranslate"><span class="pre">AssetSummary.run()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tools.asset_summary.AssetSummary.set_gridoptions"><code class="docutils literal notranslate"><span class="pre">AssetSummary.set_gridoptions()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#tools.building_summary.BuildingSummary"><code class="docutils literal notranslate"><span class="pre">BuildingSummary</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#tools.building_summary.BuildingSummary.as_text"><code class="docutils literal notranslate"><span class="pre">BuildingSummary.as_text()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tools.building_summary.BuildingSummary.convert_dataframe"><code class="docutils literal notranslate"><span class="pre">BuildingSummary.convert_dataframe()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tools.building_summary.BuildingSummary.delete_temp_folder"><code class="docutils literal notranslate"><span class="pre">BuildingSummary.delete_temp_folder()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tools.building_summary.BuildingSummary.generate_building_list"><code class="docutils literal notranslate"><span class="pre">BuildingSummary.generate_building_list()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tools.building_summary.BuildingSummary.get_max_column"><code class="docutils literal notranslate"><span class="pre">BuildingSummary.get_max_column()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tools.building_summary.BuildingSummary.load_data"><code class="docutils literal notranslate"><span class="pre">BuildingSummary.load_data()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tools.building_summary.BuildingSummary.return_header_indices"><code class="docutils literal notranslate"><span class="pre">BuildingSummary.return_header_indices()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tools.building_summary.BuildingSummary.run"><code class="docutils literal notranslate"><span class="pre">BuildingSummary.run()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tools.building_summary.BuildingSummary.set_gridoptions"><code class="docutils literal notranslate"><span class="pre">BuildingSummary.set_gridoptions()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Office Tools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">TOOLS</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/tools.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-tools.asset_summary">
+<span id="tools"></span><h1>TOOLS<a class="headerlink" href="#module-tools.asset_summary" title="Permalink to this heading"></a></h1>
+<p>asset_summary.py</p>
+<p>Author: Kyle Wengryn
+Version: 0.0.1</p>
+<p>This page generates the asset model</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="tools.asset_summary.AssetSummary">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tools.asset_summary.</span></span><span class="sig-name descname"><span class="pre">AssetSummary</span></span><a class="headerlink" href="#tools.asset_summary.AssetSummary" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class for the asset summary page in the asset model app</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="tools.asset_summary.AssetSummary.sync_queue">
+<span class="sig-name descname"><span class="pre">sync_queue</span></span><a class="headerlink" href="#tools.asset_summary.AssetSummary.sync_queue" title="Permalink to this definition"></a></dt>
+<dd><p>queue for database syncing</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>TinyDB</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="tools.asset_summary.AssetSummary.buildings">
+<span class="sig-name descname"><span class="pre">buildings</span></span><a class="headerlink" href="#tools.asset_summary.AssetSummary.buildings" title="Permalink to this definition"></a></dt>
+<dd><p>list of buildings</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list[dict]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="tools.asset_summary.AssetSummary.assets">
+<span class="sig-name descname"><span class="pre">assets</span></span><a class="headerlink" href="#tools.asset_summary.AssetSummary.assets" title="Permalink to this definition"></a></dt>
+<dd><p>list of assets</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list[dict]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="tools.asset_summary.AssetSummary.selected_project">
+<span class="sig-name descname"><span class="pre">selected_project</span></span><a class="headerlink" href="#tools.asset_summary.AssetSummary.selected_project" title="Permalink to this definition"></a></dt>
+<dd><p>selected project</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="tools.asset_summary.AssetSummary.selected_building">
+<span class="sig-name descname"><span class="pre">selected_building</span></span><a class="headerlink" href="#tools.asset_summary.AssetSummary.selected_building" title="Permalink to this definition"></a></dt>
+<dd><p>selected building</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="tools.asset_summary.AssetSummary.grid_data">
+<span class="sig-name descname"><span class="pre">grid_data</span></span><a class="headerlink" href="#tools.asset_summary.AssetSummary.grid_data" title="Permalink to this definition"></a></dt>
+<dd><p>grid data for the ag grid</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dataframe</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="tools.asset_summary.AssetSummary.db">
+<span class="sig-name descname"><span class="pre">db</span></span><a class="headerlink" href="#tools.asset_summary.AssetSummary.db" title="Permalink to this definition"></a></dt>
+<dd><p>Database manager for dynamodb</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>DatabaseManager</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="tools.asset_summary.AssetSummary.current_grid_data">
+<span class="sig-name descname"><span class="pre">current_grid_data</span></span><a class="headerlink" href="#tools.asset_summary.AssetSummary.current_grid_data" title="Permalink to this definition"></a></dt>
+<dd><p>grid data to compare to for edits</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dataframe</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="tools.asset_summary.AssetSummary.uniformat_search">
+<span class="sig-name descname"><span class="pre">uniformat_search</span></span><a class="headerlink" href="#tools.asset_summary.AssetSummary.uniformat_search" title="Permalink to this definition"></a></dt>
+<dd><p>uniformat search selection</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tools.asset_summary.AssetSummary.add_asset">
+<span class="sig-name descname"><span class="pre">add_asset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">uniformat</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tools.asset_summary.AssetSummary.add_asset" title="Permalink to this definition"></a></dt>
+<dd><p>Adds and asset based on uniformat</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>(</strong><strong>str</strong><strong>)</strong> (<em>uniformat</em>) – </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tools.asset_summary.AssetSummary.as_text">
+<span class="sig-name descname"><span class="pre">as_text</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tools.asset_summary.AssetSummary.as_text" title="Permalink to this definition"></a></dt>
+<dd><p>Converts cell value to text if the value exists</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>value</strong> (<em>str</em><em>, </em><em>None</em>) – value to convert</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>converted value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tools.asset_summary.AssetSummary.convert_dataframe">
+<span class="sig-name descname"><span class="pre">convert_dataframe</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">assets</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tools.asset_summary.AssetSummary.convert_dataframe" title="Permalink to this definition"></a></dt>
+<dd><p>Converts a list of dictionaries into a pandas dataframe</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>assets</strong> (<em>list</em><em>[</em><em>dict</em><em>]</em>) – list of dictionaries to convert</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tools.asset_summary.AssetSummary.delete_temp_folder">
+<span class="sig-name descname"><span class="pre">delete_temp_folder</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tools.asset_summary.AssetSummary.delete_temp_folder" title="Permalink to this definition"></a></dt>
+<dd><p>deletes the temporary folder thad holds the building list</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tools.asset_summary.AssetSummary.generate_asset_model">
+<span class="sig-name descname"><span class="pre">generate_asset_model</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tools.asset_summary.AssetSummary.generate_asset_model" title="Permalink to this definition"></a></dt>
+<dd><p>generates the building list to be downloaded</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tools.asset_summary.AssetSummary.get_max_column">
+<span class="sig-name descname"><span class="pre">get_max_column</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sheet</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Worksheet</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#tools.asset_summary.AssetSummary.get_max_column" title="Permalink to this definition"></a></dt>
+<dd><p>Function to get max columns of a sheet</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>sheet</strong> (<em>worksheet.Worksheet</em>) – sheet to get max columns of</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>max columns</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tools.asset_summary.AssetSummary.load_data">
+<span class="sig-name descname"><span class="pre">load_data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tools.asset_summary.AssetSummary.load_data" title="Permalink to this definition"></a></dt>
+<dd><p>Loads data from the database into the page</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tools.asset_summary.AssetSummary.load_uniformat_descriptions">
+<span class="sig-name descname"><span class="pre">load_uniformat_descriptions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tools.asset_summary.AssetSummary.load_uniformat_descriptions" title="Permalink to this definition"></a></dt>
+<dd><p>loads the uniformat descriptions for the search function</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tools.asset_summary.AssetSummary.return_header_indices">
+<span class="sig-name descname"><span class="pre">return_header_indices</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sheet</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Worksheet</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">row</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#tools.asset_summary.AssetSummary.return_header_indices" title="Permalink to this definition"></a></dt>
+<dd><p>Function to return a dictionary of the headers and their columns
+for data alignment</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>sheet</strong> (<em>Worksheet</em>) – sheet to get headers from</p></li>
+<li><p><strong>row</strong> (<em>int</em>) – row where the headers are located</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Map of headers and their respective column</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict[str, int]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tools.asset_summary.AssetSummary.run">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tools.asset_summary.AssetSummary.run" title="Permalink to this definition"></a></dt>
+<dd><p>Drives the streamlit UI</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tools.asset_summary.AssetSummary.set_gridoptions">
+<span class="sig-name descname"><span class="pre">set_gridoptions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">GridOptionsBuilder</span></span></span><a class="headerlink" href="#tools.asset_summary.AssetSummary.set_gridoptions" title="Permalink to this definition"></a></dt>
+<dd><p>sets the grid options for the streamlit ag grid</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>builder for st aggrid table</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>GridOptionBuilder</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<span class="target" id="module-tools.building_summary"></span><p>building_summary.py</p>
+<p>Author: Kyle Wengryn
+Version: 0.0.1</p>
+<p>This page generates the building model</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="tools.building_summary.BuildingSummary">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tools.building_summary.</span></span><span class="sig-name descname"><span class="pre">BuildingSummary</span></span><a class="headerlink" href="#tools.building_summary.BuildingSummary" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class for the building summary page in the asset model app</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tools.building_summary.BuildingSummary.as_text">
+<span class="sig-name descname"><span class="pre">as_text</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tools.building_summary.BuildingSummary.as_text" title="Permalink to this definition"></a></dt>
+<dd><p>Converts cell value to text if the value exists</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>value</strong> (<em>str</em><em>, </em><em>None</em>) – </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Converted cell value</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tools.building_summary.BuildingSummary.convert_dataframe">
+<span class="sig-name descname"><span class="pre">convert_dataframe</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">buildings</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tools.building_summary.BuildingSummary.convert_dataframe" title="Permalink to this definition"></a></dt>
+<dd><p>Converts a list of dictionaries into a pandas dataframe</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>buildings</strong> (<em>list</em><em>[</em><em>dict</em><em>]</em>) – list of dictionaries to convert</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tools.building_summary.BuildingSummary.delete_temp_folder">
+<span class="sig-name descname"><span class="pre">delete_temp_folder</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tools.building_summary.BuildingSummary.delete_temp_folder" title="Permalink to this definition"></a></dt>
+<dd><p>deletes the temporary folder thad holds the building list</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tools.building_summary.BuildingSummary.generate_building_list">
+<span class="sig-name descname"><span class="pre">generate_building_list</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tools.building_summary.BuildingSummary.generate_building_list" title="Permalink to this definition"></a></dt>
+<dd><p>generates the building list to be downloaded</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tools.building_summary.BuildingSummary.get_max_column">
+<span class="sig-name descname"><span class="pre">get_max_column</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sheet</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Worksheet</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#tools.building_summary.BuildingSummary.get_max_column" title="Permalink to this definition"></a></dt>
+<dd><p>Function to get max columns of a sheet</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>sheet</strong> (<em>worksheet.Worksheet</em>) – sheet to get max columns of</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>max columns</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tools.building_summary.BuildingSummary.load_data">
+<span class="sig-name descname"><span class="pre">load_data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tools.building_summary.BuildingSummary.load_data" title="Permalink to this definition"></a></dt>
+<dd><p>Loads data from the database into the page</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tools.building_summary.BuildingSummary.return_header_indices">
+<span class="sig-name descname"><span class="pre">return_header_indices</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sheet</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Worksheet</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">row</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#tools.building_summary.BuildingSummary.return_header_indices" title="Permalink to this definition"></a></dt>
+<dd><p>Function to return a dictionary of the headers and their columns
+for data alignment</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>sheet</strong> (<em>openpyxl sheet</em>) – sheet to get headers from</p></li>
+<li><p><strong>row</strong> (<em>int</em>) – row where the headers are located</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Map of headers and their respective column</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict(str, int)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tools.building_summary.BuildingSummary.run">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tools.building_summary.BuildingSummary.run" title="Permalink to this definition"></a></dt>
+<dd><p>Drives the streamlit UI</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tools.building_summary.BuildingSummary.set_gridoptions">
+<span class="sig-name descname"><span class="pre">set_gridoptions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">GridOptionsBuilder</span></span></span><a class="headerlink" href="#tools.building_summary.BuildingSummary.set_gridoptions" title="Permalink to this definition"></a></dt>
+<dd><p>sets the grid options for the streamlit ag grid</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>GridOptionBuilder</strong></p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>builder for st aggrid table</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="pages.html" class="btn btn-neutral float-left" title="PAGES" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Will Campbell, Kyle Wengryn.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
