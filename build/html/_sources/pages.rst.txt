@@ -10,3 +10,8 @@ PAGES
    :members:
    :undoc-members:
    :show-inheritance:
+
+.. automodule:: pages.4_Asset_Model
+   :members:
+   :undoc-members:
+   :show-inheritance:

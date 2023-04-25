@@ -149,6 +149,17 @@
 <li class="toctree-l3"><a class="reference internal" href="#id38"><code class="docutils literal notranslate"><span class="pre">PlanonConversion.zip_output()</span></code></a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#pages.4_Asset_Model.AssetModel"><code class="docutils literal notranslate"><span class="pre">AssetModel</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#pages.4_Asset_Model.AssetModel.selected_project"><code class="docutils literal notranslate"><span class="pre">AssetModel.selected_project</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pages.4_Asset_Model.AssetModel.projects"><code class="docutils literal notranslate"><span class="pre">AssetModel.projects</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pages.4_Asset_Model.AssetModel.projects_menu_items"><code class="docutils literal notranslate"><span class="pre">AssetModel.projects_menu_items</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pages.4_Asset_Model.AssetModel.db"><code class="docutils literal notranslate"><span class="pre">AssetModel.db</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pages.4_Asset_Model.AssetModel.version"><code class="docutils literal notranslate"><span class="pre">AssetModel.version</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pages.4_Asset_Model.AssetModel.get_projects"><code class="docutils literal notranslate"><span class="pre">AssetModel.get_projects()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pages.4_Asset_Model.AssetModel.get_selected_project"><code class="docutils literal notranslate"><span class="pre">AssetModel.get_selected_project()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pages.4_Asset_Model.AssetModel.run"><code class="docutils literal notranslate"><span class="pre">AssetModel.run()</span></code></a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="tools.html">TOOLS</a></li>
@@ -1057,6 +1068,99 @@ for data alignment</p>
 <span class="sig-name descname"><span class="pre">zip_output</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#id38" title="Permalink to this definition"></a></dt>
 <dd><p>zips the contents of the planon conversion folder
 so the user can download</p>
+</dd></dl>
+
+</dd></dl>
+
+<span class="target" id="module-pages.4_Asset_Model"></span><p>4_Asset_Model.py</p>
+<p>Author: Kyle Wengryn
+Version: 0.0.1</p>
+<p>This page generates the Asset and Building models that are used
+in ADCT creation.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="pages.4_Asset_Model.AssetModel">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pages.4_Asset_Model.</span></span><span class="sig-name descname"><span class="pre">AssetModel</span></span><a class="headerlink" href="#pages.4_Asset_Model.AssetModel" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class that drives the asset model page</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pages.4_Asset_Model.AssetModel.selected_project">
+<span class="sig-name descname"><span class="pre">selected_project</span></span><a class="headerlink" href="#pages.4_Asset_Model.AssetModel.selected_project" title="Permalink to this definition"></a></dt>
+<dd><p>selected project</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pages.4_Asset_Model.AssetModel.projects">
+<span class="sig-name descname"><span class="pre">projects</span></span><a class="headerlink" href="#pages.4_Asset_Model.AssetModel.projects" title="Permalink to this definition"></a></dt>
+<dd><p>list of projects</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list[str]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pages.4_Asset_Model.AssetModel.projects_menu_items">
+<span class="sig-name descname"><span class="pre">projects_menu_items</span></span><a class="headerlink" href="#pages.4_Asset_Model.AssetModel.projects_menu_items" title="Permalink to this definition"></a></dt>
+<dd><p>tuple of project names</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>tuple[str]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pages.4_Asset_Model.AssetModel.db">
+<span class="sig-name descname"><span class="pre">db</span></span><a class="headerlink" href="#pages.4_Asset_Model.AssetModel.db" title="Permalink to this definition"></a></dt>
+<dd><p>database handler for dynamodb</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>DatabaseManager</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pages.4_Asset_Model.AssetModel.version">
+<span class="sig-name descname"><span class="pre">version</span></span><a class="headerlink" href="#pages.4_Asset_Model.AssetModel.version" title="Permalink to this definition"></a></dt>
+<dd><p>version of the app</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pages.4_Asset_Model.AssetModel.get_projects">
+<span class="sig-name descname"><span class="pre">get_projects</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pages.4_Asset_Model.AssetModel.get_projects" title="Permalink to this definition"></a></dt>
+<dd><p>gets the list of projects</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pages.4_Asset_Model.AssetModel.get_selected_project">
+<span class="sig-name descname"><span class="pre">get_selected_project</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="headerlink" href="#pages.4_Asset_Model.AssetModel.get_selected_project" title="Permalink to this definition"></a></dt>
+<dd><p>gets the selected project</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>selected project</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pages.4_Asset_Model.AssetModel.run">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pages.4_Asset_Model.AssetModel.run" title="Permalink to this definition"></a></dt>
+<dd><p>Function that drives the streamlit UI</p>
 </dd></dl>
 
 </dd></dl>
